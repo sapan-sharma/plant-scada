@@ -4,6 +4,7 @@ import {FiSettings} from 'react-icons/fi'
 import {TooltipComponent} from '@syncfusion/ej2-react-popups'
 import {Sidebar, Navbar, Header, Footer, ThemeSettings} from './components'
 import {HMI, Predictions, Settings, FactoryFloor, Accounts, Assemblies, Calendar} from './pages'
+import {Stacked} from './pages/Charts/Stacked'
 
 import './App.css'
 
@@ -17,6 +18,7 @@ function App(){
 
 		<BrowserRouter>
 			<div className='flex relative dark:bg-main-dark-bg'>
+				
 				<div className='fixed right-4 bottom-4' style={{zIndex: '1000'}}>
 					<TooltipComponent>
 						<button type='button'
@@ -38,36 +40,37 @@ function App(){
 				}
 
 				
-					<div className={
-				    	`dark:bg-main-bg bg-main-bg min-h-screen w-full 
-				    	${activeMenu ? 'md:ml-72' : 'flex-2'}`				    	
-				    }>
-				    	<div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
-				    		<Navbar/>
-				    	</div>
-
+				<div
+					className={
+						activeMenu
+							? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 w-full  '
+							: 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
+									
+				}>
+					<div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
+						<Navbar/>
 					</div>
 
 					<div>
-					    <Routes>
-					    	{/*dashboard*/}
-					    	<Route path='' element={<HMI/>}/>
-					    	<Route path='/hmi' element={<HMI/>}/>
-					    	{/*pages*/}
-					    	<Route path='/predictions' element={<Predictions/>}/>
-					    	<Route path='/accounts' element={<Accounts/>}/>
-					    	<Route path='/assemblies' element={<Assemblies/>}/>
-							<Route path='/settings' element={<Settings/>}></Route>
-							<Route path='/control-center' element={<Calendar/>}></Route>
-							<Route path='/factory-floor' element={<FactoryFloor/>}/>
-					    	{/* Apps*/}
-					    	
-					    {/*Charts*/}					    	
-					    	<Route path='/stacked' element={<Stacked/>}/>
-					    </Routes>	
-					</div>
-				
-				
+							<Routes>
+								{/*dashboard*/}
+								<Route path='' element={<Predictions/>}/>
+								<Route path='/hmi' element={<HMI/>}/>
+								{/*pages*/}
+								<Route path='/predictions' element={<Predictions/>}/>
+								<Route path='/accounts' element={<Accounts/>}/>
+								<Route path='/assemblies' element={<Assemblies/>}/>
+								<Route path='/settings' element={<Settings/>}></Route>
+								<Route path='/control-center' element={<Calendar/>}></Route>
+								<Route path='/factory-floor' element={<FactoryFloor/>}/>
+								{/* Apps*/}
+								
+							{/*Charts*/}					    	
+							
+							</Routes>	
+						</div>
+
+				</div>
 
 			</div>
 		</BrowserRouter>

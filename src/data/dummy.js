@@ -484,7 +484,7 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'factory-Floor',
+        name: 'factory-floor',
         icon: <IoMdContacts />,
       },
       {
@@ -501,7 +501,7 @@ export const links = [
     title: 'Apps',
     links: [
       {
-        name: 'controlcenter',
+        name: 'control-center',
         icon: <AiOutlineCalendar />,
       },
     ],
