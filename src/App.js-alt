@@ -1,0 +1,12 @@
+import React from 'react'
+
+function App(){
+    return(
+        <div className='text-green items-center'>
+            Testing testing!!
+        </div>
+    )
+    
+}
+
+export default App
