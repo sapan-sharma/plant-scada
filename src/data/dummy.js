@@ -474,7 +474,7 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'HMI',
+        name: 'predictions',
         icon: <FiShoppingBag />,
       },
     ],
@@ -484,16 +484,16 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
-      },
-      {
-        name: 'employees',
+        name: 'factoryfloor',
         icon: <IoMdContacts />,
       },
       {
-        name: 'customers',
+        name: 'assemblies',
         icon: <RiContactsLine />,
+      },
+      {
+        name: 'accounts',
+        icon: <AiOutlineShoppingCart />,
       },
     ],
   },
@@ -501,20 +501,8 @@ export const links = [
     title: 'Apps',
     links: [
       {
-        name: 'calendar',
+        name: 'controlcenter',
         icon: <AiOutlineCalendar />,
-      },
-      {
-        name: 'kanban',
-        icon: <BsKanban />,
-      },
-      {
-        name: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
       },
     ],
   },
@@ -522,38 +510,10 @@ export const links = [
     title: 'Charts',
     links: [
       {
-        name: 'line',
+        name: 'Settings',
         icon: <AiOutlineStock />,
       },
-      {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
-      },
+     
     ],
   },
 ];
