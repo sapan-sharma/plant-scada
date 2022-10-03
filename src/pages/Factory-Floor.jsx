@@ -21,4 +21,4 @@ const FactoryFloor = () => (
   </div>
 );
 
-export default Kanban;
+export default FactoryFloor;

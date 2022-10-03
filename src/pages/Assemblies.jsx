@@ -28,4 +28,4 @@ const Assemblies = () => {
     </div>
   );
 };
-export default Orders;
+export default Assemblies;

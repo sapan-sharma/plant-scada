@@ -32,4 +32,4 @@ const Accounts = () => {
   );
 };
 
-export default Customers;
+export default Accounts;
