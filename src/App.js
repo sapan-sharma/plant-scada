@@ -3,9 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import {FiSettings} from 'react-icons/fi'
 import {TooltipComponent} from '@syncfusion/ej2-react-popups'
 import {Sidebar, Navbar, Header, Footer, ThemeSettings} from './components'
-import {HMI, Orders, Calendar, Employees, Stacked, 
-	Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, 
-	ColorPicker, ColorMapping, Editor} from './pages'
+import {HMI, Predictions, Settings, FactoryFloor, Accounts, Assemblies, Calendar} from './pages'
 
 import './App.css'
 
@@ -56,23 +54,15 @@ function App(){
 					    	<Route path='' element={<HMI/>}/>
 					    	<Route path='/hmi' element={<HMI/>}/>
 					    	{/*pages*/}
-					    	<Route path='/orders' element={<Orders/>}/>
-					    	<Route path='/employees' element={<Employees/>}/>
-					    	<Route path='/customers' element={<Customers/>}/>
-
+					    	<Route path='/predictions' element={<Predictions/>}/>
+					    	<Route path='/accounts' element={<Accounts/>}/>
+					    	<Route path='/assemblies' element={<Assemblies/>}/>
+							<Route path='/settings' element={<Settings/>}></Route>
+							<Route path='/control-center' element={<Calendar/>}></Route>
+							<Route path='/factory-floor' element={<FactoryFloor/>}/>
 					    	{/* Apps*/}
-					    	<Route path='/kanban' element={<Kanban/>}/>
-					    	<Route path='/editor' element={<Editor/>}/>
-					    	<Route path='/calendar' element={<Calendar/>}/>
-					    	<Route path='/color-picker' element={<ColorPicker/>}/>
-					    {/*Charts*/}
-					    	<Route path='/line' element={<Line/>}/>
-					    	<Route path='/area' element={<Area/>}/>
-					    	<Route path='/bar' element={<Bar/>}/>
-					    	<Route path='/pie' element={<Pie/>}/>
-					    	<Route path='/financial' element={<Financial/>}/>
-					    	<Route path='/color-mapping' element={<ColorMapping/>}/>
-					    	<Route path='/pyramid' element={<Pyramid/>}/>
+					    	
+					    {/*Charts*/}					    	
 					    	<Route path='/stacked' element={<Stacked/>}/>
 					    </Routes>	
 					</div>

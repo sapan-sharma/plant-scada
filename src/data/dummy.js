@@ -484,7 +484,7 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'factoryfloor',
+        name: 'factory-Floor',
         icon: <IoMdContacts />,
       },
       {
