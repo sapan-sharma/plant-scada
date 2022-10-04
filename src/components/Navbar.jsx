@@ -55,8 +55,8 @@ const Navbar = () => {
 
       <NavButton title="Menu" customFunc={handleActiveMenu} color={currentColor} icon={<AiOutlineMenu />} />
       <div className='justify-between md:static bg-main-bg dark:bg-main-dark-bg'>
-					<span>Want to try SCADA X? click</span>
-          <span> <a href='https://variablerobotics.wixsite.com/home/try-demo' target='_blank' className='text-yellow-400 font-bold'>here</a></span></div>
+					<span>Want to try SCADA X? </span>
+          <span> <a href='https://variablerobotics.wixsite.com/home/try-demo' target='_blank' className='text-yellow-400 font-bold'>Explore Now!</a></span></div>
       <div className="flex">
         <NavButton title="Chat" dotColor="#03C9D7" customFunc={() => handleClick('chat')} color={currentColor} icon={<BsChatLeft />} />
         <NavButton title="Notification" dotColor="rgb(254, 201, 15)" customFunc={() => handleClick('notification')} color={currentColor} icon={<RiNotification3Line />} />
